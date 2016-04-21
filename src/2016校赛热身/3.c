@@ -11,9 +11,9 @@ int main(int argc, char const *argv[]) {
             sum = sum + a[i] % 10;
         }
         if (sum % 2 == 1) {
-            long long min = a[0];
+            long long min = 1000000001;
             for (long long i = 0; i < n; i++) {
-                if (min > a[i]){
+                if (min > a[i] && a[i] % 2 == 1){
                     min = a[i];
                 }
             }
